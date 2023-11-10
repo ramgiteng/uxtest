@@ -8,7 +8,7 @@ exports.init = async({driver, webdriver, threadNum, vuserNum, helpers}) => {
 	await transaction("01_LaunchGoogle", async() => {
 		await driver.get("http://google.ca");
 		
-		await waitForPageLoad(driver, "//*[@text='Google Search']);
+		await waitForPageLoad(driver, "//*[@text='Google Search']");
 	})
 }
 
@@ -22,7 +22,7 @@ exports.main = async({driver, webdriver, threadNum, vuserNum, helpers}) => {
 	await transaction("01_RefreshGoogle", async() => {
 		await driver.navigate().refresh();
 		
-		await waitForPageLoad(driver, "//*[@text='Google Search']);
+		await waitForPageLoad(driver, "//*[@text='Google Search']");
 	})
 }
 
