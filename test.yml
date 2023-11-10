@@ -1,10 +1,10 @@
 phases:
  - rampTo: 5
- - duration: 20
+   duration: 20
  - rampTo: 5
- - duration: 50
+   duration: 50
  - rampTo: 0
- - duration: 20
+   duration: 20
 scripts:
  - processor: './script.js'
    weight: 100
