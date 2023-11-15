@@ -36,4 +36,6 @@ exports.end = async({driver, webdriver, threadNum, vuserNum, helpers}) => {
 	const appName = 'MercuryTours';
 	const transaction = await transactionFactory({appName,threadNum,vuserNum,driver});
 	
+	console.log(`Ending thread ${threadNum}`);
+	
 }
