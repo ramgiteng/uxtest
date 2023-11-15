@@ -33,7 +33,7 @@ exports.end = async({driver, webdriver, threadNum, vuserNum, helpers}) => {
 	const { transactionFactory, waitForPageLoad, waitForElement } = helpers;
 	const { By, until } = webdriver;
 	
-	const appName = 'Mercury Vans';
+	const appName = 'MercuryTours';
 	const transaction = await transactionFactory({appName,threadNum,vuserNum,driver});
 	
 }
